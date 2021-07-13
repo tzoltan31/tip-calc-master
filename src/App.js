@@ -67,7 +67,7 @@ function App() {
 
   const calcTotalSum = () => {
     if (bill && people && tip) {
-      const totalTip = calcTipSum() * 4;
+      const totalTip = calcTipSum() * people;
       const sum = (totalTip + bill) / people;
       return sum.toFixed(2);
     } else return 0;
