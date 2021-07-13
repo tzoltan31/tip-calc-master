@@ -15,9 +15,9 @@ function Tip({
   return (
     <>
       <section>
-        <h4 className="text-cyan-darkgray2 mb-4 lg:text-xl lg:font-extrabold">
+        <h2 className="text-cyan-darkgray2 mb-4 lg:text-xl lg:font-extrabold">
           Select Tip %
-        </h4>
+        </h2>
         <div className="grid grid-cols-2 grid-rows-3 gap-4 lg:grid-cols-3 lg:grid-rows-2">
           {percent.map((item, index) => {
             return (
@@ -32,7 +32,7 @@ function Tip({
                     : ` bg-cyan-verydark text-white`
                 }`}
               >
-                <p>{item}%</p>
+                {item}%
               </button>
             );
           })}
@@ -55,14 +55,14 @@ function Tip({
         </div>
       </section>
       <section>
-        <h4 className="mb-2 text-cyan-darkgray2 lg:text-xl lg:font-extrabold">
+        <h2 className="mb-2 text-cyan-darkgray2 lg:text-xl lg:font-extrabold">
           Number of people
           {people === 0 ? (
             <span className="float-right text-red-600">Cant be zero</span>
           ) : (
             ``
           )}
-        </h4>
+        </h2>
         <label
           htmlFor="people"
           className={`cursor-pointer flex  bg-cyan-lightgray2 justify-between items-center p-2 rounded-md  ${

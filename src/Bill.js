@@ -3,14 +3,14 @@ import React from "react";
 function Bill({ handleChange, bill }) {
   return (
     <section>
-      <h4 className="mb-2 text-cyan-darkgray2 lg:text-2xl lg:font-bold">
+      <h2 className="mb-2 text-cyan-darkgray2 lg:text-2xl lg:font-bold">
         Bill
         {bill === 0 ? (
           <span className="float-right text-red-600">Cant be zero</span>
         ) : (
           ``
         )}
-      </h4>
+      </h2>
 
       <label
         htmlFor="bill"
